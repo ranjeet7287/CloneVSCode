@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>VS_CODE_CLONE</title>
+</head>
+<body>
+    <!-- Nav Bar Section -->
+    <section>
+        <nav class="bg-slate-900 text-gray-400 flex justify-between items-center h-20">
+            <img class="ml-10" src="./assets/download.png" alt="logo" width="50px">
+            <span class="text-2xl text-white" >Visual Studio Code</span>
+            <!-- img and list components -->
+            <ul class="flex gap-7 mt-4 text-lg" >
+                <li class="hover:text-white" >Docs</li>
+                <li class="hover:text-white">Updates</li>
+                <li class="hover:text-white">Blog</li>
+                <li class="hover:text-white">API</li>
+                <li class="hover:text-white">Extension</li>
+                <li class="hover:text-white">FAQ</li>
+                <li class="hover:text-white">Learn</li>
+            </ul>
+            <!-- search and download button -->
+            <label class="relative block mt-4 ">
+                <span class="sr-only">Search</span>
+                <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                    <img  src="./assets/iconsnew-search (1).svg" alt="icon" width="20px">
+                </span>
+                <input class="placeholder:italic placeholder:text-slate-400 block bg-slate-800 w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search" type="text" name="search"/>
+              </label>
+            <button class="mr-9 bg-blue-700 text-lg text-white p-3 rounded-lg mt-2 hover:bg-green-500 hover:text-black" >Download</button>
+        </nav>
+    </section>
+</body>
+</html>
