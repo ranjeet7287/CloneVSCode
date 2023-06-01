@@ -10,11 +10,11 @@
 <body>
     <!-- Nav Bar Section -->
     <section>
-        <nav class="bg-slate-900 text-gray-400 flex justify-between items-center h-20">
-            <img class="ml-10" src="./assets/download.png" alt="logo" width="50px">
-            <span class="text-2xl text-white ">Visual Studio Clone</span>
+        <nav class="bg-slate-900 text-gray-400 flex justify-around items-center h-20">
+            <img class="ml-7" src="./assets/download.png" alt="logo" width="50px">
+            <p class="text-2xl text-white ml-2">Visual Studio Clone</p>
             <!-- img and list components -->
-            <ul class="flex gap-7 mt-4 text-lg" >
+            <ul class="flex gap-7 mt-4 text-lg ml-5 mr-5 max-md:hidden" >
                 <li class="hover:text-white" >Docs</li>
                 <li class="hover:text-white">Updates</li>
                 <li class="hover:text-white">Blog</li>
@@ -24,14 +24,14 @@
                 <li class="hover:text-white">Learn</li>
             </ul>
             <!-- search and download button -->
-            <label class="relative block mt-4 ">
+            <label class="relative block mt-4 mr-2 max-md:hidden">
                 <span class="sr-only">Search</span>
                 <span class="absolute inset-y-0 left-0 flex items-center pl-2">
                     <img  src="./assets/iconsnew-search (1).svg" alt="icon" width="20px">
                 </span>
                 <input class="placeholder:italic placeholder:text-slate-400 block bg-slate-800 w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search" type="text" name="search"/>
               </label>
-            <button class="mr-9 bg-blue-700 text-lg text-white p-3 rounded-lg mt-2 hover:bg-green-500 hover:text-black" >Download</button>
+            <button class="mr-2 bg-blue-700 text-lg text-white p-3 rounded-lg mt-2 hover:bg-green-500 hover:text-black max-lg:hidden" >Download</button>
         </nav>
     </section>
 
@@ -42,10 +42,10 @@
     </section>
 
     <!-- main section  -->
-    <section class="flex bg-slate-900 text-gray-400 h-90 items-center ">
+    <section class="flex bg-slate-900 text-gray-400 h-90 items-center">
         <!-- left section -->
         <!-- conent and button section -->
-        <section class="w-1/3 ml-10 mb-30 text-center ">
+        <section class="w-30 ml-10 mb-30 text-center p-5">
             <p class="text-[50px] text-white">Code editing.</p>
             <p class="text-[40px] text-white font-bold">Redefined.</p>
             <p class="text-[20px] font-bold p-2">Free. Built on open source. Runs everywhere.</p>
@@ -66,13 +66,13 @@
         </section>
         <!-- right section -->
         <!-- Conatain Image -->
-        <section class="w-3/4 p-10 drop-shadow-2xl">
+        <section class="w-70 p-10 drop-shadow-2xl max-md:hidden">
             <img src="./assets/Screenshot 2023-06-01 094442.png" alt="" width="800px">
         </section>
     </section>
 
     <!-- image block -->
-    <section class="flex bg-gray-700 justify-center">
+    <section class="flex bg-black justify-center">
         <div class="w-1/5 hover:bg-white flex justify-center pt-5 pb-5">
             <button ><img src="./assets/icons8-light-on-48.png" alt=""></button>
         </div>
@@ -87,9 +87,87 @@
         </div>
     </section>
 
+    <section class="flex justify-around flex-wrap bg-slate-900 ">
+        <div class="p-6 max-w-sm mx-auto bg-indigo-950 m-10 rounded-xl shadow-lg flex items-center space-x-4  ">
+            <div class="shrink-0">
+            <img class="h-12 w-12" src="./assets/Outdoors-man-portrait_(cropped).jpg" alt="ChitChat Logo">
+            </div>
+            <div>
+              <div class="text-xl font-medium text-white ">Una Kravets</div>
+              <p class="text-white ">VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+            </div>
+        </div>
+        <div class="p-6 max-w-sm mx-auto bg-indigo-950 m-10 rounded-xl shadow-lg flex items-center   space-x-4">
+            <div class="shrink-0">
+            <img class="h-12 w-12" src="./assets/Outdoors-man-portrait_(cropped).jpg" alt="ChitChat Logo">
+            </div>
+            <div>
+              <div class="text-xl font-medium text-white">Jonathan Dunlap</div>
+              <p class="text-white">VS @code does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+            </div>
+        </div>  <div class="p-6 max-w-sm mx-auto bg-indigo-950 m-10 rounded-xl   shadow-lg flex items-center space-x-4">
+            <div class="shrink-0">
+            <img class="h-12 w-12" src="./assets/Outdoors-man-portrait_(cropped).jpg" alt="ChitChat Logo">
+            </div>
+            <div>
+              <div class="text-xl font-medium text-white">Pavithra Kodmad </div>
+              <p class="text-white">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="flex justify-around items-center bg-slate-900 text-white ">
+        <!-- img -->
+        <div class="m-10">
+            <img src="./assets/home-intellisense.svg" alt="image">
+        </div>
+        <div class="font-medium mr-20">
+            <p class="text-3xl">Meet IntelliSense.<p>
+            <p class="mt-4 ">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules</p>
+        </div>
+    </section>
 
+    <section class="flex bg-black text-white">
+        <div class="font-medium ml-10">
+            <p class="text-3xl mt-20">Print statement debugging is a thing of the past.<p>
+            <p class="mt-4 ">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+        </div>
+        <div class="m-10">
+            <img src="./assets/home-debug.svg" alt="image">
+        </div>
+    </section>
 
+    <section class="flex justify-around items-center bg-slate-900 text-white">
+        <!-- img -->
+        <div class="m-10">
+            <img src="./assets/home-git.svg" alt="image">
+        </div>
+        <div class="font-medium mr-20">
+            <p class="text-3xl">Git commands built-in.<p>
+            <p class="mt-4 ">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+        </div>
+    </section>
+
+    <section class="flex bg-black text-white">
+        <div class="font-medium ml-10">
+            <p class="text-3xl mt-20">Extensible and customizable.<p>
+            <p class="mt-4 ">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor.</p>
+        </div>
+        <div class="m-10">
+            <img src="./assets/Hundreds-of-Extensions.png" alt="image">
+        </div>
+    </section>
+
+    <section class="flex justify-around items-center bg-slate-900 text-white ">
+        <!-- img -->
+        <div class="m-10">
+            <img src="./assets/home-azure.svg" alt="image">
+        </div>
+        <div class="font-medium mr-20">
+            <p class="text-3xl">Deploy with confidence and ease<p>
+            <p class="mt-4 ">With Microsoft Azure you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, all from within VS Code.</p>
+        </div>
+    </section> 
 
 </body>
 </html>
